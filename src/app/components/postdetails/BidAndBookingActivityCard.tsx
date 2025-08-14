@@ -31,7 +31,7 @@ const BidAndBookingActivityCard = () => {
                             </td>
                             <td className="py-3">
                                 <div>
-                                    <p className="text-[#751c24] text-sm">Modus Enterprises Limited</p>
+                                    <p className="text-[#d21f26] text-sm">Modus Enterprises Limited</p>
                                     <p className="text-gray-400 text-xs">+254 700 000 000</p>
                                 </div>
                             </td>
