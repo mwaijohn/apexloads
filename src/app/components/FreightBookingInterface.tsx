@@ -10,27 +10,29 @@ import BidAndBookingActivityCard from './postdetails/BidAndBookingActivityCard';
 
 export default function FreightBookingInterface() {
   return (
-    <div className=" text-white min-h-screen">
-      <div className="flex">
+    <div className="text-white min-h-screen">
+      <div className="flex flex-col lg:flex-row">
         {/* Left Panel */}
-        <div className="w-2/3 p-6 space-y-6">
+        <div className="w-full lg:w-2/3 p-4 md:p-6 space-y-4 md:space-y-6">
           {/* Post Details Card */}
-          <div className="bg-[#1d1d1d] rounded-lg p-6">
-            <div className="flex justify-between items-center mb-6">
-              <h2 className="text-xl font-semibold">Post Details</h2>
+          <div className="bg-[#1d1d1d] rounded-lg p-4 md:p-6">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 md:mb-6 space-y-2 sm:space-y-0">
+              <h2 className="text-lg md:text-xl font-semibold">Post Details</h2>
               <div className="flex items-center space-x-2">
-                <span className="bg-[#272627] px-3 py-1 rounded-full text-sm">POSTED</span>
+                <span className="bg-[#272627] px-3 py-1 rounded-full text-xs md:text-sm">POSTED</span>
                 <button className="text-gray-400 hover:text-white">
                   <MoreHorizontal className="w-5 h-5" />
                 </button>
               </div>
             </div>
 
-            <p className="text-gray-400 text-sm mb-6">Created 2hrs ago</p>
-            <div className="grid grid-cols-2 gap-6 mb-8">
+            <p className="text-gray-400 text-xs md:text-sm mb-4 md:mb-6">Created 2hrs ago</p>
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8">
               {/* Trip Info */}
-              <TripCard />
-              <div>
+              <div className="order-1">
+                <TripCard />
+              </div>
+              <div className="order-2 space-y-4 md:space-y-0">
                 <RateCard />
                 <PostingDetailsCard />
                 <ContactCard />
@@ -42,7 +44,7 @@ export default function FreightBookingInterface() {
         </div>
 
         {/* Right Panel - Map and Pricing */}
-        <div className="w-1/3 flex flex-col space-y-6 p-6">
+        <div className="w-full lg:w-1/3 flex flex-col space-y-4 md:space-y-6 p-4 md:p-6">
           {/* Map Section */}
           <MapCard />
 
@@ -51,17 +53,19 @@ export default function FreightBookingInterface() {
             {/* Spot Rate */}
             <SpotCard />
             {/* Contract Rate */}
-            <div className='mt-6'>
+            <div className='mt-4 md:mt-6'>
               <SpotCard />
             </div>
 
             {/* Related Trucks */}
-            <div className="text-center mt-8">
-              <button className="text-red-500 font-medium hover:underline">VIEW 11 RELATED TRUCKS</button>
-              <p className="text-gray-400 text-sm mt-1">These trucks match your postings</p>
+            <div className="text-center mt-6 md:mt-8">
+              <button className="text-red-500 font-medium hover:underline text-sm md:text-base">
+                VIEW 11 RELATED TRUCKS
+              </button>
+              <p className="text-gray-400 text-xs md:text-sm mt-1">These trucks match your postings</p>
             </div>
 
-            <button className="w-full bg-[#d21f26] hover:bg-red-700 text-white font-medium py-3 px-4 rounded-4xl transition-colors mt-6">
+            <button className="w-full bg-[#d21f26] hover:bg-red-700 text-white font-medium py-3 px-4 rounded-4xl transition-colors mt-4 md:mt-6 text-sm md:text-base">
               Mark as Booked
             </button>
           </div>
