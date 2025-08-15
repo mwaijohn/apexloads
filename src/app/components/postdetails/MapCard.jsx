@@ -16,7 +16,7 @@ const MapCard = () => {
                 <span className="bg-white px-2 py-1 rounded shadow text-black text-xs sm:text-sm">Naivasha, NC</span>
             </div>
             <div className="absolute bottom-2 left-2 text-xs sm:text-sm text-gray-600 bg-white px-2 py-1 rounded max-w-[90%]">
-                Keyboard shortcuts | Map data ©2025 Google | Terms | Report a map error
+                dummy location
             </div>
         </div>
     )

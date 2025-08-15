@@ -35,42 +35,43 @@ const TripCard = () => {
                             </div>
                         </div>
                     </div>
+
                     <div className="mt-6 ml-2">
                         <h4 className="text-sm font-medium mb-3">EQUIPMENT</h4>
                         <div className="space-y-2 text-sm">
-                            <div className="grid grid-cols-2 gap-2">
-                                <span className="text-gray-400">Load</span>
-                                <span className="text-right">Full</span>
+                            <div className="grid grid-cols-2 gap-8">
+                                <span className="text-gray-400 text-left">Load</span>
+                                <span className="text-left">Full</span>
                             </div>
-                            <div className="grid grid-cols-2 gap-2">
+                            <div className="grid grid-cols-2 gap-8">
                                 <span className="text-gray-400">Truck</span>
-                                <span className="text-right">Full</span>
+                                <span className="text-left">Full</span>
                             </div>
-                            <div className="grid grid-cols-2 gap-2">
+                            <div className="grid grid-cols-2 gap-8">
                                 <span className="text-gray-400">Length</span>
-                                <span className="text-right">24 ft</span>
+                                <span className="text-left">24 ft</span>
                             </div>
-                            <div className="grid grid-cols-2 gap-2">
+                            <div className="grid grid-cols-2 gap-8 items-center">
                                 <span className="text-gray-400">Commodity</span>
-                                <span className="text-right">Footballs</span>
+                                <span className="text-left">Footballs</span>
                             </div>
-                            <div className="grid grid-cols-2 gap-2">
+                            <div className="grid grid-cols-2 gap-8">
                                 <span className="text-gray-400">Weight</span>
-                                <span className="text-right">42,000 lbs</span>
+                                <span className="text-left">42,000 lbs</span>
                             </div>
-                            <div className="grid grid-cols-2 gap-2">
+                            <div className="grid grid-cols-2 gap-8">
                                 <span className="text-gray-400">Commodity</span>
-                                <span className="text-right">--</span>
+                                <span className="text-left ">--</span>
                             </div>
-                            <div className="grid grid-cols-2 gap-2">
+                            <div className="grid grid-cols-2 gap-8">
                                 <span className="text-gray-400">Tracking</span>
-                                <span className="text-right">--</span>
+                                <span className="text-left">--</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="ml-5">
-                    <button className="bg-[#272627] text-white font-bold text-sm rounded-full px-4 py-2 flex items-center hover:bg-red-600 transition-colors border-1 border-gray-400">
+                    <button className="bg-[#272627] text-white font-bold text-sm rounded-full px-2 py-2 flex items-center hover:bg-red-600 transition-colors border-1 border-gray-400">
                         <ArrowUpRight className="w-4 h-4 mr-1" /> VIEW ROUTE
                     </button>
                 </div>
