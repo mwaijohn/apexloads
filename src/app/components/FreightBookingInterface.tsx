@@ -7,10 +7,12 @@ import ContactCard from './postdetails/ContactCard';
 import MapCard from './postdetails/MapCard';
 import SpotCard from './mapsection/SpotCard';
 import BidAndBookingActivityCard from './postdetails/BidAndBookingActivityCard';
+import ShipMentDetailsHeader from './ShipMentDetailsHeader';
 
 export default function FreightBookingInterface() {
   return (
-    <div className="text-white min-h-screen">
+    <div className="text-white min-h-screen bg-[#121212]">
+      <ShipMentDetailsHeader />
       <div className="flex flex-col lg:flex-row">
         {/* Left Panel */}
         <div className="w-full lg:w-2/3 p-4 md:p-6 space-y-4 md:space-y-6">
