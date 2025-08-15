@@ -12,43 +12,34 @@ const BidAndBookingActivityCard = () => {
             </div>
             <div className="border-t border-[#3a3a3a] mb-4"></div>
 
-            <div className="overflow-x-auto px-3">
-                <table className="w-full">
-                    <thead>
-                        <tr className="text-left text-gray-400 text-sm border-b border-[#3a3a3a]">
-                            <th className="pb-4">AGE</th>
-                            <th className="pb-4">CONTACT</th>
-                            <th className="pb-4">BIDS</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td className="py-3">
-                                <div className="flex items-center">
-                                    <span className=" w-6 h-6 rounded-full flex items-center justify-center text-xs mr-3">16m</span>
-                                    <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
-                                </div>
-                            </td>
-                            <td className="py-3">
-                                <div>
-                                    <p className="text-[#d21f26] text-sm">Modus Enterprises Limited</p>
-                                    <p className="text-gray-400 text-xs">+254 700 000 000</p>
-                                </div>
-                            </td>
-                            <td className="py-3">
-                                <div className="flex items-center">
-                                    <div className="bg-gray-700 p-2 rounded mr-3">
-                                        <Lock className="w-4 h-4" />
-                                    </div>
-                                    <div>
-                                        <p className="font-medium">$7,230</p>
-                                        <p className="text-gray-400 text-xs">Posted rate</p>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div className="space-y-4 px-4">
+                <div className="flex text-left text-gray-400 text-sm border-b border-[#3a3a3a] pb-4">
+                    <div className="w-16">AGE</div>
+                    <div className="w-48">CONTACT</div>
+                    <div className="w-32">BIDS</div>
+                </div>
+
+                <div className="flex items-start">
+                    <div className="w-16 flex items-center gap-3">
+                        <span className="text-sm">16m</span>
+                        <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
+                    </div>
+
+                    <div className="w-48">
+                        <p className="text-[#d21f26] text-sm">Modus Enterprises Limited</p>
+                        <p className="text-gray-400 text-xs">+254 700 000 000</p>
+                    </div>
+
+                    <div className="w-32 flex items-start gap-3">
+                        <div className="bg-gray-700 p-2 rounded">
+                            <Lock className="w-4 h-4" />
+                        </div>
+                        <div>
+                            <p className="font-medium">$7,230</p>
+                            <p className="text-gray-400 text-xs">Posted rate</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
