@@ -19,7 +19,7 @@ export default function FreightBookingInterface() {
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 md:mb-6 space-y-2 sm:space-y-0">
               <h2 className="text-lg md:text-xl font-semibold">Post Details</h2>
               <div className="flex items-center space-x-2">
-                <span className="bg-[#272627] px-3 py-1 rounded-full text-xs md:text-sm">POSTED</span>
+                <span className="bg-[#3a3a3b] px-6 py-2 rounded-full text-xs md:text-sm font-bold">POSTED</span>
                 <button className="text-gray-400 hover:text-white">
                   <MoreHorizontal className="w-5 h-5" />
                 </button>
