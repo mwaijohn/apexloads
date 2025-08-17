@@ -9,13 +9,13 @@ const MapCard = () => {
             <div className="absolute top-1/3 left-1/3 right-1/4 h-px bg-black opacity-30 transform rotate-12"></div>
 
             {/* Map labeling */}
-            <div className="absolute top-1/4 left-1/4 transform -translate-y-8 -translate-x-4">
-                <span className="bg-white px-2 py-1 rounded shadow text-black text-xs sm:text-sm">Kiambu, Kiambu</span>
+            <div className="absolute top-1/4 left-1/4 transform -translate-y-6 -translate-x-4">
+                <span className="bg-white px-1 py-0.5 rounded shadow text-black text-xs">Kiambu, Kiambu</span>
             </div>
-            <div className="absolute top-1/2 right-1/3 transform -translate-y-8 translate-x-4">
-                <span className="bg-white px-2 py-1 rounded shadow text-black text-xs sm:text-sm">Naivasha, NC</span>
+            <div className="absolute top-1/2 right-1/3 transform -translate-y-6 translate-x-4">
+                <span className="bg-white px-1 py-0.5 rounded shadow text-black text-xs">Naivasha, NC</span>
             </div>
-            <div className="absolute bottom-2 left-2 text-xs sm:text-sm text-gray-600 bg-white px-2 py-1 rounded max-w-[90%]">
+            <div className="absolute bottom-1 left-1 text-xs text-gray-600 bg-white px-1 py-0.5 rounded max-w-[90%]">
                 dummy location
             </div>
         </div>
