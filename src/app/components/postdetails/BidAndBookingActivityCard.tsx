@@ -1,5 +1,5 @@
 import React from 'react';
-import { MoreHorizontal, Lock } from 'lucide-react';
+import { MoreHorizontal, Lock,Clock } from 'lucide-react';
 
 const BidAndBookingActivityCard = () => {
     return (
@@ -21,7 +21,8 @@ const BidAndBookingActivityCard = () => {
                 <div className="flex items-start">
                     <div className="w-16 flex items-center gap-2">
                         <span className="text-sm">16m</span>
-                        <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
+                        {/* <div className="w-2 h-2 bg-orange-500 rounded-full"></div> */}
+                        <Clock className="w-4 h-4 text-orange-500 fill-orange-500/50" />
                     </div>
 
                     <div className="w-48">
