@@ -8,10 +8,11 @@ import MapCard from './mapsection/MapCard';
 import SpotCard from './mapsection/SpotCard';
 import BidAndBookingActivityCard from './postdetails/BidAndBookingActivityCard';
 import ShipMentDetailsHeader from './ShipMentDetailsHeader';
+import ContractRate from './mapsection/ContractRate';
 
 export default function FreightBookingInterface() {
   return (
-    <div className="text-white min-h-screen bg-[#121212]">
+    <div className="text-white bg-[#121212]  min-h-screen">
       <ShipMentDetailsHeader />
       <div className="flex flex-col lg:flex-row">
         {/* Left Panel */}
@@ -21,15 +22,15 @@ export default function FreightBookingInterface() {
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-3 space-y-2 sm:space-y-0">
               <h2 className="text-base font-semibold">Post Details</h2>
               <div className="flex items-center space-x-2">
-                <span className="bg-[#3a3a3b] px-4 py-1 rounded-full text-xs font-bold">POSTED</span>
+                <span className="bg-[#3a3a3b] px-4 py-1 rounded-full text-sm font-bold">POSTED</span>
                 <button className="text-gray-400 hover:text-white">
                   <MoreHorizontal className="w-4 h-4" />
                 </button>
               </div>
             </div>
 
-            <p className="text-gray-400 text-xs mb-3">Created 2hrs ago</p>
-            <div className="grid grid-cols-1 xl:grid-cols-2 gap-3 mb-4">
+            <p className="text-gray-400 text-sm mb-3">Created 2hrs ago</p>
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-3 mb-1">
               {/* Trip Info */}
               <div className="order-1">
                 <TripCard />
@@ -56,18 +57,18 @@ export default function FreightBookingInterface() {
             <SpotCard />
             {/* Contract Rate */}
             <div className='mt-3'>
-              <SpotCard />
+              <ContractRate />
             </div>
 
             {/* Related Trucks */}
-            <div className="text-center mt-4">
+            <div className="text-center mt-3">
               <button className="text-red-500 font-medium hover:underline text-sm">
                 VIEW 11 RELATED TRUCKS
               </button>
-              <p className="text-gray-400 text-xs mt-1">These trucks match your postings</p>
+              <p className="text-gray-400 text-sm mt-1">These trucks match your postings</p>
             </div>
 
-            <button className="w-full bg-[#d21f26] hover:bg-red-700 text-white font-medium py-2 px-4 rounded-4xl transition-colors mt-3 text-sm">
+            <button className="w-full bg-[#d21f26] hover:bg-red-700 text-white font-medium py-2 px-4 rounded-4xl transition-colors mt-8 text-sm">
               Mark as Booked
             </button>
           </div>
