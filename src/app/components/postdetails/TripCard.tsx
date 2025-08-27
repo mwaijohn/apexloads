@@ -73,6 +73,10 @@ const TripCard = () => {
                                 <span className="text-gray-400">Tracking</span>
                                 <span className="text-left">--</span>
                             </div>
+                            <div className="grid grid-cols-2 gap-6">
+                                <span className="text-gray-400">Comments</span>
+                                <span className="text-left">Item enroute</span>
+                            </div>
                         </div>
                     </div>
                 </div>
