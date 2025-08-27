@@ -4,7 +4,7 @@ import { Info } from 'lucide-react';
 const SpotCard = () => {
     return (
         <div className="border rounded shadow bg-[#272627] border-[#3a3a3a]">
-            <div className="text-basefont-medium mb-2 bg-[#3a3a3b] px-3 py-2 flex justify-between">
+            <div className="text-base font-medium mb-2 bg-[#3a3a3b] px-3 py-2 flex justify-between">
                 <span className="text-sm">SPOT</span>
                 <span className="text-sm">Mombasa, KE - Kampala, UG</span>
             </div>
