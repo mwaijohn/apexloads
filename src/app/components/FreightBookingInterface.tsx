@@ -1,4 +1,5 @@
-import React from 'react';
+'use client'
+import React, { useState } from 'react';
 import { MoreHorizontal } from 'lucide-react';
 import TripCard from './postdetails/TripCard';
 import RateCard from './postdetails/RateCard';
@@ -9,8 +10,23 @@ import SpotCard from './mapsection/SpotCard';
 import BidAndBookingActivityCard from './postdetails/BidAndBookingActivityCard';
 import ShipMentDetailsHeader from './ShipMentDetailsHeader';
 import ContractRate from './mapsection/ContractRate';
+import BookingArea from './mapsection/BookingArea';
 
 export default function FreightBookingInterface() {
+  const [showBookingModal, setShowBookingModal] = useState(true);
+  const [isBooked, setIsBooked] = useState(false);
+  const handleMarkAsBooked = () => {
+    setShowBookingModal(true);
+  };
+
+  const handleBookingConfirm = () => {
+    setIsBooked(true);
+    setShowBookingModal(false);
+  };
+
+  const handleBookingCancel = () => {
+    setShowBookingModal(false);
+  };
   return (
     <div className="text-white bg-[#121212]  min-h-screen">
       <ShipMentDetailsHeader />
@@ -67,10 +83,7 @@ export default function FreightBookingInterface() {
               </button>
               <p className="text-gray-400 text-sm mt-1">These trucks match your postings</p>
             </div>
-
-            <button className="w-full bg-[#d21f26] hover:bg-red-700 text-white font-medium py-2 px-4 rounded-4xl transition-colors mt-8 text-sm">
-              Mark as Booked
-            </button>
+            <BookingArea />
           </div>
         </div>
       </div>
