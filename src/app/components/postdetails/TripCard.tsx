@@ -4,7 +4,7 @@ import { ArrowUpRight } from 'lucide-react';
 const TripCard = () => {
     return (
         <div className="border rounded shadow bg-[#272627] border-[#3a3a3a]">
-            <h3 className="text-base font-medium mb-2 bg-[#3a3a3b] px-4 py-1">TRIP</h3>
+            <h3 className="text-sm font-medium mb-2 bg-[#3a3a3b] px-4 py-1">TRIP</h3>
             <div className="px-4 pb-4 flex flex-row justify-between">
                 <div className='flex-1'>
                     <div className="flex flex-row items-start">

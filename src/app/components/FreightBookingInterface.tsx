@@ -1,5 +1,4 @@
-'use client'
-import React, { useState } from 'react';
+import React from 'react';
 import { MoreHorizontal } from 'lucide-react';
 import TripCard from './postdetails/TripCard';
 import RateCard from './postdetails/RateCard';
@@ -13,20 +12,7 @@ import ContractRate from './mapsection/ContractRate';
 import BookingArea from './mapsection/BookingArea';
 
 export default function FreightBookingInterface() {
-  const [showBookingModal, setShowBookingModal] = useState(true);
-  const [isBooked, setIsBooked] = useState(false);
-  const handleMarkAsBooked = () => {
-    setShowBookingModal(true);
-  };
 
-  const handleBookingConfirm = () => {
-    setIsBooked(true);
-    setShowBookingModal(false);
-  };
-
-  const handleBookingCancel = () => {
-    setShowBookingModal(false);
-  };
   return (
     <div className="text-white bg-[#121212]  min-h-screen">
       <ShipMentDetailsHeader />
