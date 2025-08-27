@@ -7,15 +7,15 @@ const RateCard = () => {
             <div className="space-y-1 text-sm px-3 pb-3">
                 <div className="flex justify-start gap-4">
                     <span className="text-gray-400 w-20">Total</span>
-                    <span>$ 3,500</span>
+                    <span className='text-base'>$ 3,500</span>
                 </div>
                 <div className="flex justify-start gap-4">
                     <span className="text-gray-400 w-20">Trip</span>
-                    <span>1098 mi</span>
+                    <span className='text-base'>1098 mi</span>
                 </div>
                 <div className="flex justify-start gap-4">
                     <span className="text-gray-400 w-20">Rate / mile</span>
-                    <span>$ 2.000</span>
+                    <span className='text-base'>$ 2.000</span>
                 </div>
             </div>
         </div>
